@@ -1,3 +1,4 @@
+@javascript
 Feature: Search for hotels in a price range
 In order to find a hotel in the user's price range
 As a user searching for hotels
