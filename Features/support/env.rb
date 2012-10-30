@@ -1,26 +1,12 @@
-require 'rubygems'
-require 'bundler/setup'
-
 require 'capybara/cucumber'
-require 'capybara/spec/test_app'
+require "selenium-webdriver"
+require "rspec"
+include RSpec::Expectations
 
-Capybara.app = TestApp
+@driver = Selenium::WebDriver.for :firefox
+@base_url = "http://booking.expotel.com/"
+    @driver.manage.timeouts.implicit_wait = 30
+    @verification_errors = []
 
-require 'frameworks-capybara'
 
-class MyWorld
-  TEST_PAGE_PATH ='/'
 
-  def set_test_urls
-    @test_page = @base_url + TEST_PAGE_PATH
-    
-  end
-end
-
-World do
-  MyWorld.new
-end
-
-Before do
-   set_test_urls
-end
