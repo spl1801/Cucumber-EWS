@@ -1,6 +1,6 @@
-Given /^I am on the EWS Search page$/ do
-  visit("http://booking.expotel.com")
-end
+#Given /^I am on the EWS Search page$/ do
+#  visit("http://booking.expotel.com")
+#end
 
 Given /^I have entered a price "(.*?)"$/ do |arg1|
 	find(:css, "option[value=\"KN\"]").click
