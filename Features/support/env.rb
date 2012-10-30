@@ -1,6 +1,6 @@
 require 'capybara/cucumber'
-require "selenium-webdriver"
-require "rspec"
+require 'selenium-webdriver'
+require 'rspec'
 include RSpec::Expectations
 
 #@driver = Selenium::WebDriver.for :firefox
