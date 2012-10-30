@@ -13,4 +13,3 @@ Scenario Outline: Search for a hotel in a price range
 	Examples:
 		| price | result_price |
 		| 100	| 100          |
-		| 200   | 200          |
