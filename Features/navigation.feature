@@ -15,7 +15,7 @@ Feature:
 		Examples:
 			| inbound | internal |
 			| Hotels | Hotel Search |
-#			| Bookers Toolkit | Bookers Toolkit |
+#	This opens a new tab/window		| Bookers Toolkit | Bookers Toolkit |
 			| M.I.C.E. | Meetings, Incentives, Conferences & Events |
 			| Exhibitions | To search for international events, please select the appropriate country |
 			| FAQ | Frequently Asked Questions |

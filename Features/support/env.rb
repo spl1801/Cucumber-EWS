@@ -1,9 +1,14 @@
+require 'capybara'
+require 'capybara/dsl'
 require 'capybara/cucumber'
 require 'selenium-webdriver'
 require 'rspec'
 include RSpec::Expectations
 
 Capybara.default_driver = :selenium
+Capybara.app_host = "http://booking.expotel.com/"
+
+World(Capybara)
 
 #@driver = Selenium::WebDriver.for :firefox
 #@base_url = "http://booking.expotel.com/"
