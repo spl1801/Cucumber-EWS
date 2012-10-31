@@ -1,9 +1,9 @@
-When /^I select an inbound link$/ do
-  pending # express the regexp above with the code you wish you had
+When /^I select the link "([^"]*)"$/ do |link|
+	click_on(link)
 end
 
-Then /^I am presented with the correct internal page$/ do
-  pending # express the regexp above with the code you wish you had
+Then /^I am presented with the correct "([^"]*)" page$/ do |page|
+	page.should have_content(page)
 end
 
 When /^I select an outbound link$/ do
