@@ -7,6 +7,7 @@ Feature:
 	(inbound link = will display an internally hosted page)
 	(outbound link = will display an external page from a different site)
 
+	@screenshot
 	Scenario Outline: Select active inbound link
 		Given I am on the EWS Search page
 		When I select the link "<inbound>"
@@ -22,7 +23,7 @@ Feature:
 			| Expotel.com | Member Login |
 			| Register Now | Please Register Below |
 
-
+	@screenshot
 	Scenario Outline: Select active inbound link
 		Given I am on the EWS Search page
 		When I follow the link "<inbound>"
