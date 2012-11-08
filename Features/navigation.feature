@@ -20,12 +20,23 @@ Feature:
 			| Exhibitions | To search for international events, please select the appropriate country |
 			| FAQ | Frequently Asked Questions |
 			| Expotel.com | Member Login |
-			| http://booking.expotel.com/tilesaction.do?formatname=registerwhy | Registration is fast and free!	|
-			| Terms & Conditions | Expotel Terms &amp; Conditions |
+			| Register Now | Please Register Below |
+
+
+	Scenario Outline: Select active inbound link
+		Given I am on the EWS Search page
+		When I follow the link "<inbound>"
+		Then I am presented with the correct "<internal>" page
+
+		Examples:
+			| inbound | internal |
+			| Terms & Conditions | Expotel Terms & Conditions |
 			| Privacy Policy | Privacy Policy |
 			| Contact Us | Contact Us |
-			| exact:Forgotten password? | Forgotten Password |
-			| Register Now | Please Register Below |
+			| Why Register | Forgotten Password |
+
+
+
 #
 #
 #	Scenario: Select active outbound link
